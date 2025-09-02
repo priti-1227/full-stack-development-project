@@ -1,5 +1,3 @@
-
-
 export default function Navbar() {
   return (
     
@@ -7,8 +5,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-4 sm:mx-8 md:mx-24 lg:mx-52  flex items-center justify-between py-4 px-6">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img src="/logo.png" alt="Next-Gen Logo" className="h-8" />
-          <span className="text-white font-bold text-lg">NEXT-GEN</span>
+          <img src="src/assets/logo.png" alt="Next-Gen Logo" className="h-8" />
+          
         </div>
 <div className="flex items-center gap-4">
         {/* Nav Links */}
@@ -27,7 +25,7 @@ export default function Navbar() {
                 </nav>
 
         {/* CTA */}
-        <button className="bg-blue-700 hover:bg-blue-600 text-white rounded-lg px-5 py-2 text-sm">
+        <button className="border-1 bg-[#264C9280]  text-white rounded-lg px-5 py-3 text-sm">
           Let&apos;s Transform
         </button>
       </div>
