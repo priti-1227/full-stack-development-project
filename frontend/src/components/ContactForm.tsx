@@ -54,7 +54,7 @@ export default function ContactForm() {
 
   return (
     <section aria-labelledby="get-started-title" className="w-full bg-gradient-to-b from-sky-50 to-sky-100/70">
-      <div className="max-w-7xl mx-4 sm:mx-8  lg:mx-52 px-4 py-10 sm:py-12">
+      <div className="max-w-7xl mx-4 sm:mx-8  lg:mx-40 px-4 py-10 sm:py-12">
         <header className="text-center mb-6 sm:mb-8">
           <h2
             id="get-started-title"

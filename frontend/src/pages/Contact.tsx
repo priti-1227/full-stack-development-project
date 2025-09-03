@@ -5,8 +5,8 @@ function Contact() {
   return (
     <>
      <section className="w-full  min-h-screen bg-gradient-noise text-white flex flex-col justify-center">
-    <div className="max-w-7xl mx-4 sm:mx-8 z-20 lg:mx-52 px-6 pt-7 text-center flex flex-col md:flex-row gap-8 md:gap-20 md:text-left">
-        <div className="font-semibold text-3xl md:text-[58.59px] w-full md:w-[50%] leading-tight md:leading-[100%] tracking-normal">
+    <div className="max-w-7xl mx-4 sm:mx-8 z-20 lg:mx-40 px-6 pt-7 text-center flex flex-col md:flex-row gap-8 md:gap-20 md:text-left">
+        <div className="font-semibold text-2xl md:text-[50px] w-full md:w-[50%] leading-tight md:leading-[100%] tracking-normal">
             Get Free
             Consultation Today.
             Give us a Call!
