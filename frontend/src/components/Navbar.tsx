@@ -56,7 +56,7 @@ export const ResponsiveNavbar: React.FC = () => {
 
   return (
     <header className="w-full fixed top-0 bg-transparent backdrop-blur-md z-50">
-      <div className="relative max-w-7xl mx-4 sm:mx-8 lg:mx-52 flex items-center justify-between py-4 px-6">
+      <div className="relative max-w-6xl  sm:mx-8 lg:mx-52 flex items-center justify-between py-4 ">
         {/* Logo */}
         <a href="/" className="flex items-center gap-2">
 
