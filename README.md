@@ -48,7 +48,7 @@ This project consists of:
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone git@github.com:priti-1227/full-stack-development-project.git
 cd FullStackDev
 ```
 
