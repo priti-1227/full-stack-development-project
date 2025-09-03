@@ -4,11 +4,11 @@ import { Eye, LineChart, BarChart3 } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="w-full  min-h-screen bg-gradient-to-b from-blue-900 to-blue-700 text-white flex flex-col justify-center">
-      <div className="max-w-7xl mx-4 sm:mx-8 md:mx-24 lg:mx-52 px-6 pt-32 text-center md:text-left">
+    <section className="w-full  min-h-screen bg-gradient-noise text-white flex flex-col justify-center pb-2.5">
+      <div className="max-w-6xl z-30 mx-4 sm:mx-8 lg:mx-40 px-6 pt-32 text-center md:text-left">
         {/* Tagline */}
         <div
-          className="inline-flex items-center border-1 font-semibold text-2xl bg-[#264C9280] gap-2 rounded-[10.94px] px-6 py-3  mb-4"
+          className="inline-flex items-center border-1 font-semibold text-2xl bg-[#264C9280] gap-2 rounded-[10.94px] px-6 py-1  mb-4"
          
         >
           <span>Your Growth Partner</span>
