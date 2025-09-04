@@ -5,28 +5,35 @@ import cors from "cors";
 import morgan from "morgan";
 import helmet from "helmet";
 import compression from "compression";
+import contactRouter from "./src/routes/contact.js";
 
 const app = express();
 
-// Middleware
+// middleware
 app.use(helmet());
 app.use(compression());
 app.use(express.json());
 app.use(morgan("dev"));
 
 
-// Health check
+// routes
 app.get("/api/health", (_, res) => res.json({ ok: true }));
+app.use("/api/contact", contactRouter);
 
-// Connect MongoDB + start server
 const PORT = process.env.PORT || 5000;
+app.use(cors({
+  origin: process.env.CORS_ORIGIN || "*",
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
+  credentials: true
+}));
+
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
-    console.log("MongoDB connected ✅");
-    app.listen(PORT, () => console.log(`Backend running on http://localhost:${PORT}`));
+    console.log("✅ MongoDB connected");
+    app.listen(PORT, () => console.log(`🚀 Backend running at http://localhost:${PORT}`));
   })
   .catch((err) => {
-    console.error("Mongo error ❌", err);
+    console.error("❌ MongoDB connection error:", err);
     process.exit(1);
   });
