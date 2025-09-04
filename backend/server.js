@@ -13,7 +13,7 @@ app.use(helmet());
 app.use(compression());
 app.use(express.json());
 app.use(morgan("dev"));
-app.use(cors({ origin: process.env.CORS_ORIGIN || "*" }));
+
 
 // Health check
 app.get("/api/health", (_, res) => res.json({ ok: true }));
