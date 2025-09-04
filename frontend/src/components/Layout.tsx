@@ -8,7 +8,7 @@ export default function Layout() {
     <div className="flex flex-col min-h-screen font-sans">
       <Navbar />
       <main className="flex-grow">
-        <Outlet /> {/* Page content goes here */}
+        <Outlet />
       </main>
       <Footer />
     </div>

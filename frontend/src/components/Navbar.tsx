@@ -60,7 +60,7 @@ export const ResponsiveNavbar: React.FC = () => {
         {/* Logo */}
         <a href="/" className="flex items-center gap-2">
 
-          <img src="src/assets/logo.png" alt="Next-Gen Logo" className="h-8" />
+          <img src="/logo.png" alt="Next-Gen Logo" className="h-8" />
         </a>
 
         <div className="flex items-center gap-3">
