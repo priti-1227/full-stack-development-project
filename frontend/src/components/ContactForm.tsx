@@ -22,7 +22,7 @@ export default function ContactForm() {
     const { name, value } = e.target
     setValues((v) => ({ ...v, [name]: value }))
   }
-const API_BASE_URL = process.env.REACT_APP_API_URL;
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";;
  async function onSubmit(e: React.FormEvent) {
   e.preventDefault()
   setSubmitting(true)
