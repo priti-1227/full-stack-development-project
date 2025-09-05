@@ -22,16 +22,21 @@ export default function ContactForm() {
     const { name, value } = e.target
     setValues((v) => ({ ...v, [name]: value }))
   }
-
+const API_BASE_URL = process.env.REACT_APP_API_URL;
  async function onSubmit(e: React.FormEvent) {
   e.preventDefault()
   setSubmitting(true)
   try {
-    const res = await fetch("http://localhost:5000/api/contact", {
+    // const res = await fetch("http://localhost:5000/api/contact", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/json" },
+    //   body: JSON.stringify(values),
+    // })
+    const res = await fetch(`${API_BASE_URL}/api/contact`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),
-    })
+    });
 
     if (!res.ok) {
       const { error } = await res.json()
