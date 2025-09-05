@@ -27,16 +27,16 @@ const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";;
   e.preventDefault()
   setSubmitting(true)
   try {
-    // const res = await fetch("http://localhost:5000/api/contact", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/json" },
-    //   body: JSON.stringify(values),
-    // })
-    const res = await fetch(`${API_BASE_URL}/api/contact`, {
+    const res = await fetch("https://full-stack-development-project-iniy.onrender.com/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),
-    });
+    })
+    // const res = await fetch(`${API_BASE_URL}/api/contact`, {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/json" },
+    //   body: JSON.stringify(values),
+    // });
 
     if (!res.ok) {
       const { error } = await res.json()
